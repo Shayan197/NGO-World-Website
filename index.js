@@ -30,8 +30,6 @@ close_modal.addEventListener('click',function(){
     form_data.style.display = "none";
     overlay.style.display = "none"
 });
-
-
 hamburger.addEventListener('click',function(){
     li_items.style.right = "0"
     hamburger.style.display = "none";
