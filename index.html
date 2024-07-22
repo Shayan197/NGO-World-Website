@@ -7,37 +7,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="overlay"></div>
     <div class="main-container">
       <header>
         <div class="logo">
           <h1>ngoW<span>🌎</span>rld.</h1>
         </div>
-        <div class="li-items">
+        <div class="li-items" id="li-items">
           <a href="#">Home</a>
           <a href="#">Clubs</a>
           <a href="#">Trending</a>
           <a href="#">Events</a>
           <a href="#">Shops</a>
+          <button class="cross-1" id="close_modal-1">X</button>
         </div>
         <div class="button" id="btn-login">
           <a href="#">Sign Up</a>
         </div>
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </header>
       <section class="model" id="login_modal">
-        <form action="">
-          <button class="cross" id="close_modal">X</button>
-          <label for="username">Email</label>
-          <input type="text" id="username" name="username" placeholder="Enter Name" required>
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter Password" required>
-          <button class="button">sign in</button>
-        </form>
+        <div id="overlay">
+          <form action="">
+            <button class="cross" id="close_modal">X</button>
+            <label for="username">Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter Name" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            <button class="button">sign in</button>
+          </form>
+        </div>
       </section>
       <section>
         <div class="sec-main-div">
