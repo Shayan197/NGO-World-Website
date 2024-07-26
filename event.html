@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>NgoWorld | Events</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="event.css">
+  </head>
+  <body>
+      <div class="main-container">
+          <header>
+              <div class="logo">
+                <h1>ngoW<span>🌎</span>rld.</h1>
+              </div>
+              <div class="li-items" id="li-items">
+                <a href="index.html">Home</a>
+                <a href="#">Clubs</a>
+                <a href="#">Trending</a>
+                <a href="#">Events</a>
+                <a href="#">Shops</a>
+                <button class="cross-1" id="close_modal-1">X</button>
+              </div>
+              <div class="button" id="btn-login">
+                <a href="#">Sign Up</a>
+              </div>
+              <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </header>
+            <section class="model" id="login_modal">
+              <div id="overlay">
+                <form action="">
+                  <button class="cross" id="close_modal">X</button>
+                  <label for="username">Email</label>
+                  <input type="text" id="username" name="username" placeholder="Enter Name" required>
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                  <button class="button">sign in</button>
+                </form>
+              </div>
+            </section>
+            <section>
+              <div class="sec-main-content">
+                  <div class="h2hr">
+                      <h2>Happening now</h2>
+                      <hr>
+                  </div>
+                  <div class="cards">
+                      <div class="card-123 card-1">
+                          <div id="phone-size">
+                            <div class="image">
+                              <img src="download.png" alt="">
+                          </div>
+                          <div id="slide-cont">
+                            <h2>Let's build Notion</h2>
+                          <div class="zoom">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSiQBJId0jRqRXUe7Nrsa7eckWZVYy2wuBdi40U-4oXN4qnPPAi-O1d4f9YfqPVvHC_Y&usqp=CAU" alt="zoom-img">
+                              <p>Zoom Meeting</p>
+                          </div>
+                          <div class="calender">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7yHUnuKB747_hQb6ff4DJ76-4Zxk8Bb9EA&s" alt="calander-img">
+                              <p>21st March from 03:00 PM</p>
+                          </div>
+                          </div>
+                          </div>
+                          <div class="imgsAndBtns">
+                              <div class="imag">
+                                <img src="download-2.jfif" alt="img">
+                                <img src="download-2.jfif" alt="img">
+                                <img src="download-2.jfif" alt="img">
+                              </div>
+                              <div class="btn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqK30c6-sqzfOxlphek6VDsez1KSX-mQM4qA&s" alt=""></div>
+                          </div>
+                      </div>
+                      <div class="card-123 card-2" >
+                          <div id="phone-size">
+                            <div class="image">
+                              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTQiIGhlaWdodD0iNTMiIHZpZXdCb3g9IjAgMCA5NCA1MyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyLjkyMiA1Mi43M0MxNy40MjI3IDUyLjczIDEzLjE0IDUxLjQxNiAxMC4wNzQgNDguNzg4QzcuMDA4IDQ2LjExMTMgNS40NzUgNDIuMDIzMyA1LjQ3NSAzNi41MjRWMy4wOUgyMS45NzNWMzYuMzc4QzIxLjk3MyAzNy41OTQ3IDIyLjI4OTMgMzguNTQzNyAyMi45MjIgMzkuMjI1QzIzLjYwMzMgMzkuOTA2MyAyNC40MzA3IDQwLjI0NyAyNS40MDQgNDAuMjQ3QzI2LjgxNTMgNDAuMjQ3IDI4LjA1NjMgMzkuODgyIDI5LjEyNyAzOS4xNTJMMzMuMDY5IDUwLjYxM0MzMS44MDM3IDUxLjM0MyAzMC4yNzA3IDUxLjg3ODMgMjguNDcgNTIuMjE5QzI2LjcxOCA1Mi41NTk3IDI0Ljg2ODcgNTIuNzMgMjIuOTIyIDUyLjczWk0wIDI2LjMwNFYxNC4yNTlIMzAuMTQ5VjI2LjMwNEgwWk00NS45MTQxIDUyVjE0LjI1OUgzMC45NDkxVjAuODk5OTk3SDc4LjEwNzJWMTQuMjU5SDYzLjE0MjJWNTJINDUuOTE0MVpNODQuMDMwNCA1Mi43M0M4MS4zMDUxIDUyLjczIDc5LjAxNzggNTEuODU0IDc3LjE2ODQgNTAuMTAyQzc1LjMxOTEgNDguMzAxMyA3NC4zOTQ0IDQ2LjAxNCA3NC4zOTQ0IDQzLjI0Qzc0LjM5NDQgNDAuNDE3MyA3NS4zMTkxIDM4LjE1NDMgNzcuMTY4NCAzNi40NTFDNzkuMDE3OCAzNC43NDc3IDgxLjMwNTEgMzMuODk2IDg0LjAzMDQgMzMuODk2Qzg2Ljc1NTggMzMuODk2IDg5LjA0MzEgMzQuNzQ3NyA5MC44OTI0IDM2LjQ1MUM5Mi43NDE4IDM4LjE1NDMgOTMuNjY2NCA0MC40MTczIDkzLjY2NjQgNDMuMjRDOTMuNjY2NCA0Ni4wMTQgOTIuNzQxOCA0OC4zMDEzIDkwLjg5MjQgNTAuMTAyQzg5LjA0MzEgNTEuODU0IDg2Ljc1NTggNTIuNzMgODQuMDMwNCA1Mi43M1oiIGZpbGw9IiMzNjcxRkYiLz4KPC9zdmc+Cg==" alt="">
+                          </div>
+                          <div id="slide-cont">
+                            <h2>Techies</h2>
+                          <div class="zoom">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSiQBJId0jRqRXUe7Nrsa7eckWZVYy2wuBdi40U-4oXN4qnPPAi-O1d4f9YfqPVvHC_Y&usqp=CAU" alt="zoom-img">
+                              <p>Zoom Meeting</p>
+                          </div>
+                          <div class="calender">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7yHUnuKB747_hQb6ff4DJ76-4Zxk8Bb9EA&s" alt="calander-img">
+                              <p>21st March from 03:00 PM</p>
+                          </div>
+                          </div>
+                          </div>
+                          <div class="imgsAndBtns">
+                              <div class="imag">
+                                <img src="download-2.jfif" alt="img">
+                                <img src="download-2.jfif" alt="img">
+                                <img src="download-2.jfif" alt="img">
+                              </div>
+                              <div class="btn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqK30c6-sqzfOxlphek6VDsez1KSX-mQM4qA&s" alt=""></div>
+                          </div>
+                      </div>
+                      <div class="card-123 card-3">
+                          <dis id="phone-size">
+                            <div class="image">
+                              <img src="download (1).png" alt="">
+                          </div>
+                          <div id="slide-cont">
+                            <h2>Voluntier</h2>
+                          <div class="zoom">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRSiQBJId0jRqRXUe7Nrsa7eckWZVYy2wuBdi40U-4oXN4qnPPAi-O1d4f9YfqPVvHC_Y&usqp=CAU" alt="zoom-img">
+                              <p>Zoom Meeting</p>
+                          </div>
+                          <div class="calender">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7yHUnuKB747_hQb6ff4DJ76-4Zxk8Bb9EA&s" alt="calander-img">
+                              <p>21st March from 03:00 PM</p>
+                          </div>
+                          </div>
+                          </dis>
+                          <div class="imgsAndBtns">
+                              <div class="imag">
+                                  <img src="download-2.jfif" alt="img">
+                                  <img src="download-2.jfif" alt="img">
+                                  <img src="download-2.jfif" alt="img">
+                              </div>
+                              <div class="btn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqK30c6-sqzfOxlphek6VDsez1KSX-mQM4qA&s" alt=""></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+      </div>
+        <footer>
+          <div class="left-side">
+            <div class="logo">
+              <h1>ngoW<span>🌎</span>rld.</h1>
+            </div>
+            <div class="foot-cont">
+              <div class="same">
+                <h2>QUICK STARTS</h2>
+                <a href="#">Trending</a>
+                <a href="#">Clubs</a>
+                <a href="#">Shops</a>
+                <a href="#">Login</a>
+                <a href="#">Events</a>
+              </div>
+              <div class="same">
+                <h2>RESOURCES</h2>
+                <a href="#">GitHub</a>
+                <a href="#">Setup Frontend</a>
+                <a href="#">Setup Backend</a>
+                <a href="#">Docker Resources</a>
+              </div>
+              <div class="same show">
+                <h2>POLICIES</h2>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+              </div class="same">
+            </div>
+            </div>
+            <div class="right-side">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <title></title>
+                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path></svg>
+            </div>
+            <span id="chevron">▲</span>
+        </footer>
+        <script src="index.js"></script>
+  </body>
+</html>
